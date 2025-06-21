@@ -2,66 +2,67 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, Target, Heart, Award, Leaf, Globe } from 'lucide-react';
 
+// Team members data
 const teamMembers = [
   {
-    name: 'Joanitah Nanyonjo',
-    role: 'Founder & CEO',
+    name: 'Kukundakwe Yvonne',
+    role: 'Director & Founder',
     image: '/images/director.webp',
-    bio: 'Joanitah is the visionary behind POP ORGANIC, dedicated to bringing natural, effective skincare to Uganda.',
+    bio: 'Yvonne is the visionary behind POP ORGANIC, dedicated to bringing natural, effective skincare to Uganda.'
   },
   {
-    name: 'Alice Johnson',
-    role: 'Lead Skincare Specialist',
+    name: 'Ahereza Desmond Joe',
+    role: 'Manager',
     image: '/images/manager.webp',
-    bio: 'With over 10 years of experience, Alice leads our team of experts in providing top-tier skincare treatments.',
+    bio: 'With over 10 years of experience, Desmond leads our team of experts in providing top-tier skincare treatments.'
   },
   {
-    name: 'David Mulindwa',
+    name: 'Peace Jackline',
     role: 'Marketing Officer',
     image: '/images/marketing officer.webp',
-    bio: 'David is passionate about connecting with our community and sharing the benefits of organic skincare.',
+    bio: 'Peace is passionate about connecting with our community and sharing the benefits of organic skincare.'
   },
   {
-    name: 'Emily Nabatanzi',
-    role: 'Customer Relations',
+    name: 'Topacco Regan Achelam',
+    role: 'Secretary',
     image: '/images/secretary.webp',
-    bio: 'Emily ensures every client has a positive and welcoming experience, managing appointments and inquiries.',
+    bio: 'Regan ensures every client has a positive and welcoming experience, managing appointments and inquiries.'
+  }
+];
+
+const values = [
+  {
+    icon: Leaf,
+    title: 'Natural & Organic',
+    description: 'We believe in the power of nature to heal and nourish your skin.'
   },
+  {
+    icon: Heart,
+    title: 'Client-Centered Care',
+    description: 'Every treatment is personalized to meet your unique skin needs.'
+  },
+  {
+    icon: Award,
+    title: 'Excellence',
+    description: 'We maintain the highest standards in all our services and products.'
+  },
+  {
+    icon: Globe,
+    title: 'Community Impact',
+    description: 'Supporting youth employment and sustainable practices in Uganda.'
+  }
+];
+
+const milestones = [
+  { year: '2020', event: 'Founded POP Skincare with UNDP youth funding' },
+  { year: '2021', event: 'Opened first treatment center in Kampala' },
+  { year: '2022', event: 'Launched organic product line' },
+  { year: '2023', event: 'Reached 500+ satisfied clients' },
+  { year: '2024', event: 'Expanded services and team' },
+  { year: '2025', event: 'Leading organic skincare in East Africa' }
 ];
 
 const About: React.FC = () => {
-  const values = [
-    {
-      icon: Leaf,
-      title: 'Natural & Organic',
-      description: 'We believe in the power of nature to heal and nourish your skin.'
-    },
-    {
-      icon: Heart,
-      title: 'Client-Centered Care',
-      description: 'Every treatment is personalized to meet your unique skin needs.'
-    },
-    {
-      icon: Award,
-      title: 'Excellence',
-      description: 'We maintain the highest standards in all our services and products.'
-    },
-    {
-      icon: Globe,
-      title: 'Community Impact',
-      description: 'Supporting youth employment and sustainable practices in Uganda.'
-    }
-  ];
-
-  const milestones = [
-    { year: '2020', event: 'Founded POP Skincare with UNDP youth funding' },
-    { year: '2021', event: 'Opened first treatment center in Kampala' },
-    { year: '2022', event: 'Launched organic product line' },
-    { year: '2023', event: 'Reached 500+ satisfied clients' },
-    { year: '2024', event: 'Expanded services and team' },
-    { year: '2025', event: 'Leading organic skincare in East Africa' }
-  ];
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -79,12 +80,10 @@ const About: React.FC = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              About <span className="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">POP Skincare</span>
+              About <span className="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">POP ORGANIC</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-              We are a youth-driven, UNDP-funded organic skincare company dedicated to 
-              helping Ugandans achieve healthy, beautiful skin through natural solutions 
-              and professional care.
+              POP ORGANIC is a youth-driven, UNDP-funded organic skincare company dedicated to helping Ugandans achieve healthy, beautiful skin through natural solutions and professional care.
             </p>
           </motion.div>
         </div>

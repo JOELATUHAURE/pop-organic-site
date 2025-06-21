@@ -21,11 +21,12 @@ const Footer: React.FC = () => {
     { name: 'Services', href: '/services' },
   ];
 
+  // Updated to use anchor links for direct navigation to each service section on the Services page
   const services = [
-    { name: 'Anti-Pimple Treatment', href: '/services' },
-    { name: 'Deep Clean Facial', href: '/services' },
-    { name: 'Organic Skincare', href: '/products' },
-    { name: 'Consultation', href: '/contact' },
+    { name: 'Anti-Pimple Treatment', href: '/services#anti-pimple-treatment' },
+    { name: 'Deep Clean Facial', href: '/services#deep-clean-facial' },
+    { name: 'Organic Skincare', href: '/products#organic-skincare' },
+    { name: 'Consultation', href: '/contact#consultation' },
   ];
 
   const socialLinks = [

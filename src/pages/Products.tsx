@@ -39,6 +39,7 @@ const Products: React.FC = () => {
       image: '/images/Organic Face Moisturizer.webp',
       description: 'A daily moisturizer to hydrate and protect your skin.',
       benefits: ['24-hour hydration', 'Nourishes skin', 'Lightweight formula'],
+      anchorId: 'organic-skincare', // Added for anchor navigation
     },
     {
       id: 3,
@@ -188,6 +189,7 @@ const Products: React.FC = () => {
               {filteredProducts.map((product, index) => (
                 <motion.div
                   key={product.id}
+                  id={product.anchorId ? product.anchorId : undefined}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
