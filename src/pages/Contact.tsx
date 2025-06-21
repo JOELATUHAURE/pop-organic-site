@@ -50,12 +50,12 @@ const Contact: React.FC = () => {
       action: 'Call Now'
     },
     {
-      icon: <FiMail className="text-4xl text-green-500" />,
+      icon: FiMail,
       title: 'Email',
       details: ['popuganda232@gmail.com', 'We reply within 24hrs'],
     },
     {
-      icon: <FiPhone className="text-4xl text-green-500" />,
+      icon: FiPhone,
       title: 'WhatsApp',
       details: ['Quick responses', 'Book appointments'],
       action: 'Chat Now'
