@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
 
   const socialLinks = [
     { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/popskincare' },
-    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/Pop_Uganda' },
-    { name: 'Twitter', icon: Twitter, href: 'https://x.com/Pop_Uganda' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/pop_orgarnic?igsh=MXhiN2d1M2FsNTd2eQ==' },
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/Pop_Uganda' },
   ];
 
   return (

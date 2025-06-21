@@ -167,7 +167,7 @@ const About: React.FC = () => {
               className="relative"
             >
               <img
-                src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg"
+                src="/images/Natural & Organic.webp"
                 alt="Our mission in action"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />

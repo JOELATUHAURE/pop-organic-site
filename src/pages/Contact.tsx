@@ -63,9 +63,9 @@ const Contact: React.FC = () => {
   ];
 
   const socialLinks = [
-    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/Pop_Uganda', color: 'from-pink-500 to-purple-600' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/pop_orgarnic?igsh=MXhiN2d1M2FsNTd2eQ==', color: 'from-pink-500 to-purple-600' },
     { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/popskincare', color: 'from-blue-500 to-blue-600' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/Pop_Uganda', color: 'from-blue-400 to-blue-500' },
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/popuganda232', color: 'from-blue-400 to-blue-500' },
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -363,20 +363,12 @@ const Contact: React.FC = () => {
                   </h3>
                 </div>
                 <div className="space-y-3">
-                  {[
-                    { day: 'Monday - Friday', hours: '9:00 AM - 6:00 PM' },
-                    { day: 'Saturday', hours: '9:00 AM - 4:00 PM' },
-                    { day: 'Sunday', hours: 'Closed' }
-                  ].map((schedule, index) => (
-                    <div key={index} className="flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
-                      <span className="text-gray-700 dark:text-gray-300 font-medium">
-                        {schedule.day}
-                      </span>
-                      <span className="text-gray-600 dark:text-gray-400">
-                        {schedule.hours}
-                      </span>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex justify-between items-center py-2 border-b border-gray-200 dark:border-gray-600 last:border-b-0">
+                      <span className="text-gray-700 dark:text-gray-300 font-medium">Monday – Sunday</span>
+                      <span className="text-gray-600 dark:text-gray-400">8:00 AM – 6:00 PM</span>
                     </div>
-                  ))}
+                  </div>
                 </div>
               </div>
 
