@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: 'Peace Jackline',
     role: 'Marketing Officer',
-    image: '/images/marketing-officer.webp',
+    image: '/images/marketing-officer.webp', // Ensure this path is correct
     bio: 'Peace is passionate about connecting with our community and sharing the benefits of organic skincare.',
   },
   {
@@ -190,7 +190,7 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg"
+                className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 <div className="h-64 overflow-hidden">
                   <img
