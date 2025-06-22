@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Clock from 'lucide-react/dist/esm/icons/clock';
-import Star from 'lucide-react/dist/esm/icons/star';
-import Calendar from 'lucide-react/dist/esm/icons/calendar';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
-import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right';
+import { Clock, Star, Calendar, CheckCircle, ArrowRight } from 'lucide-react';
 
 const Services: React.FC = () => {
   const [activeService, setActiveService] = useState<number | null>(null);

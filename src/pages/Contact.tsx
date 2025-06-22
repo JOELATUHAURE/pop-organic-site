@@ -1,15 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import MapPin from 'lucide-react/dist/esm/icons/map-pin';
-import Phone from 'lucide-react/dist/esm/icons/phone';
-import Mail from 'lucide-react/dist/esm/icons/mail';
-import Clock from 'lucide-react/dist/esm/icons/clock';
-import MessageCircle from 'lucide-react/dist/esm/icons/message-circle';
-import Send from 'lucide-react/dist/esm/icons/send';
-import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
-import Instagram from 'lucide-react/dist/esm/icons/instagram';
-import Facebook from 'lucide-react/dist/esm/icons/facebook';
-import Twitter from 'lucide-react/dist/esm/icons/twitter';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Send, CheckCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 import { FiMail, FiPhone } from 'react-icons/fi';
 
 const Contact: React.FC = () => {
