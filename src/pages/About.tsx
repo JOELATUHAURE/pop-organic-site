@@ -124,36 +124,135 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Values Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Values</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              These core values guide everything we do and shape our commitment to excellence.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => {
+              const Icon = value.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-lg text-center"
+                >
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-accent-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {value.description}
+                  </p>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-accent-500 rounded-full flex items-center justify-center mr-4">
-                  <Target className="w-6 h-6 text-white" />
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Meet Our Team</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              Our passionate team of skincare experts and business professionals working together to deliver exceptional results.
+            </p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg"
+              >
+                <div className="h-64 overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Our Mission</h2>
-              </div>
-              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-                To provide accessible, effective, and natural skincare solutions that boost confidence and promote healthy skin habits across Uganda and East Africa.
-              </p>
-              
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-secondary-500 to-primary-500 rounded-full flex items-center justify-center mr-4">
-                  <Users className="w-6 h-6 text-white" />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-primary-600 dark:text-primary-400 font-medium mb-3">
+                    {member.role}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Our Vision</h2>
-              </div>
-              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                To become the leading organic skincare brand in East Africa, recognized for our commitment to natural healing, youth empowerment, and community development.
-              </p>
-            </motion.div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Journey</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              From a youth initiative to Uganda's leading organic skincare company.
+            </p>
+          </motion.div>
+          <div className="max-w-4xl mx-auto">
+            {milestones.map((milestone, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className={`flex items-center mb-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+              >
+                <div className={`flex-1 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+                  <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-lg">
+                    <h3 className="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-2">
+                      {milestone.year}
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300">{milestone.event}</p>
+                  </div>
+                </div>
+                <div className="w-4 h-4 bg-gradient-to-br from-primary-500 to-accent-500 rounded-full border-4 border-white dark:border-gray-800 shadow-lg z-10" />
+                <div className="flex-1" />
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
